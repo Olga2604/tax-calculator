@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./dist/bundle.css">
+        <title>Калькулятор налогов</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Калькулятор налогов</h1>
+            <div class="input-container">
+                <label for="net-salary"></label>
+                <input class="mt-30"
+                       id="net-salary"
+                       type="number"
+                       placeholder="Зарплата в месяц" />
+                <button class="btn-close">&#10005;</button>
+            </div>
+            <button class="btn-calc" id="calculateTaxes">Рассчитать</button>
+            <div class="mt-30" id="taxes">
+                <div class="tax-list">
+                    <h4>НДФЛ (если нет детей)</h4>
+                    <p class="tax" id="personal-income-tax">0 руб.</p>
+                    <h4>Пенсионный фонд</h4>
+                    <p class="tax" id="pension">0 руб.</p>
+                    <h4>Социальное страхование</h4>
+                    <p class="tax" id="social-insurance">0 руб.</p>
+                    <h4>Медицинское страхование</h4>
+                    <p class="tax" id="medical-insurance">0 руб.</p>
+                    <h4>Взносы за травматизм</h4>
+                    <p class="tax" id="injury-fee">0 руб.</p>
+                    <hr />
+                    <h4 class="mt-30" id="total">Всего налогов в месяц</h4>
+                    <p class="tax" id="monthly-taxes">0 руб.</p>
+                    <h4 class="mt-20">Всего налогов в год</h4>
+                    <p class="tax" id="year-taxes">0 руб.</p>
+                </div>
+            </div>
+        </div>
+        <script src="./dist/bundle.js"></script>
+    </body>
+</html>
