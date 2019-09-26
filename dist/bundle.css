@@ -11,7 +11,7 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(140deg, #EB4D4D, #f7f7f7);
+  background-image: linear-gradient(140deg, #4d9955, #f7f7f7);
 }
 
 h1 {
@@ -69,17 +69,38 @@ button:focus {
   left: 290px;
 }
 
+.btn-calc {
+  background: #f7f7f7;
+  border: 1px solid #f7f7f7;
+}
+
+.btn-calc:hover {
+  background: #4d9955;
+  border: 1px solid #4d9955;
+  color: #f7f7f7;
+}
+
+.btn-calc:active {
+  background: #316e31;
+  border: 1px solid #316e31;
+  color: #f7f7f7;
+}
+
 .container {
   width: 500px;
   margin: 50px auto;
   border: 1px solid #f7f7f7;
   border-radius: 4px;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .tax {
   margin-bottom: 15px;
   color: #f7f7f7;
+}
+
+.mt-20 {
+  margin-top: 20px;
 }
 
 .mt-30 {

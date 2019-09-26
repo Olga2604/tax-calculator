@@ -12,10 +12,13 @@
             <h1>Калькулятор налогов</h1>
             <div class="input-container">
                 <label for="net-salary"></label>
-                <input class="mt-30" id="net-salary" type="number" placeholder="Зарплата в месяц" />
+                <input class="mt-30"
+                       id="net-salary"
+                       type="number"
+                       placeholder="Зарплата в месяц" />
                 <button class="btn-close">&#10005;</button>
             </div>
-            <button id="calculateTaxes">Рассчитать</button>
+            <button class="btn-calc" id="calculateTaxes">Рассчитать</button>
             <div class="mt-30" id="taxes">
                 <div class="tax-list">
                     <h4>НДФЛ (если нет детей)</h4>
@@ -31,7 +34,7 @@
                     <hr />
                     <h4 class="mt-30" id="total">Всего налогов в месяц</h4>
                     <p class="tax" id="monthly-taxes">0 руб.</p>
-                    <h4 class="mt-30">Всего налогов в год</h4>
+                    <h4 class="mt-20">Всего налогов в год</h4>
                     <p class="tax" id="year-taxes">0 руб.</p>
                 </div>
             </div>
